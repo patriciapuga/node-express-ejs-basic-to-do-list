@@ -40,9 +40,11 @@ const workItems = new Map();
 
 // Add some initial items to the Map
 // Seeding the map with initial values to simulate a pre-existing list.
-items.set('1', 'Buy Food');
-items.set('2', 'Cook Food');
-items.set('3', 'Eat Food');
+items.set('1', 'Hacer proyecto de Big Data');
+items.set('2', 'Ir a hacer la compra');
+items.set('3', 'Limpiar la casa');
+items.set('4', 'Cocinar cena');
+items.set('5', 'Reparar televisión');
 
 // Define a route handler for the root route (homepage).
 // This home route handler displays the current to -do list items by date.
@@ -117,9 +119,9 @@ app.get("/about", function (req, res) {
 });
 
 // Start the server on port 3000 and log a message to the console once the server is running.
-//In JavaScript, the logical OR (||) operator returns the first operand if it is truthy, and its second operand otherwise.
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function () {
-  console.log("Server started on port", PORT);
+  console.log("Server started on port ${PORT}");
 });
